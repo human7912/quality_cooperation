@@ -56,6 +56,15 @@
         </div>
       </div>
     </div>
+    <div class="row" style="margin-bottom: 15px">
+      <div class="col-lg-12">
+        <div class="content-panel">
+          <div class="panel-body text-center">
+            <bar-chart></bar-chart>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -63,13 +72,15 @@
 import Radar from './charts/Radar.vue'
 import Guage from './charts/Gauge.vue'
 import GradeLine from './charts/GradeLine.vue'
+import BarChart from './charts/Bar.vue'
 
 export default {
   name: 'Overview',
   components: {
     'radar-chart': Radar,
     'gauge-chart': Guage,
-    'gl-chart': GradeLine
+    'gl-chart': GradeLine,
+    'bar-chart': BarChart
   }
 }
 </script>
