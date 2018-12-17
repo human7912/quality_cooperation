@@ -68,6 +68,24 @@ export default {
         }
       }]
     })
+    axios.get('/api/front/tradeDataByHours').then((res) => {
+      console.log(res.data)
+      this.hours = res.data.hours
+      this.barData = res.data.data
+      this.myChart.setOption({
+        xAxis: {
+          type: 'category',
+          data: this.hours
+        },
+        yAxis: {
+          type: 'value'
+        },
+        series: [{
+          data: this.barData,
+          type: 'bar'
+        }]
+      })
+    })
   }
 }
 </script>
