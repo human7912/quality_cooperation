@@ -9,53 +9,53 @@
         </button>
       </div>
     </div>
-    <div class="table-responsive">
-      <table class="table table-striped table-sm">
-        <thead>
-        <tr>
-          <th>测试负责人</th>
-          <th>开发负责人</th>
-          <th>产品负责人</th>
-          <th>运维负责人</th>
-          <th>客服负责人</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Abby</td>
-          <td>Bob</td>
-          <td>Chris</td>
-          <td>David</td>
-          <td>Emily</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="row" style="margin-bottom: 15px">
-      <div class="col-lg-6">
-        <div class="content-panel">
-          <div class="panel-body text-center">
-            <radar-chart></radar-chart>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="content-panel">
-          <div class="panel-body text-center">
-            <gauge-chart></gauge-chart>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row" style="margin-bottom: 15px">
-      <div class="col-lg-12">
-        <div class="content-panel">
-          <div class="panel-body text-center">
-            <gl-chart></gl-chart>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--<div class="table-responsive">-->
+      <!--<table class="table table-striped table-sm">-->
+        <!--<thead>-->
+        <!--<tr>-->
+          <!--<th>测试负责人</th>-->
+          <!--<th>开发负责人</th>-->
+          <!--<th>产品负责人</th>-->
+          <!--<th>运维负责人</th>-->
+          <!--<th>客服负责人</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+          <!--<td>Abby</td>-->
+          <!--<td>Bob</td>-->
+          <!--<td>Chris</td>-->
+          <!--<td>David</td>-->
+          <!--<td>Emily</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+      <!--</table>-->
+    <!--</div>-->
+    <!--<div class="row" style="margin-bottom: 15px">-->
+      <!--<div class="col-lg-6">-->
+        <!--<div class="content-panel">-->
+          <!--<div class="panel-body text-center">-->
+            <!--<radar-chart></radar-chart>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-lg-6">-->
+        <!--<div class="content-panel">-->
+          <!--<div class="panel-body text-center">-->
+            <!--<gauge-chart></gauge-chart>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row" style="margin-bottom: 15px">-->
+      <!--<div class="col-lg-12">-->
+        <!--<div class="content-panel">-->
+          <!--<div class="panel-body text-center">-->
+            <!--<gl-chart></gl-chart>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
     <div class="row" style="margin-bottom: 15px">
       <div class="col-lg-12">
         <div class="content-panel">

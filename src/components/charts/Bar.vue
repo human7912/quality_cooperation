@@ -9,11 +9,6 @@ import axios from 'axios'
 export default {
   name: 'BarChart',
   created () {
-    axios.get('/api/front/tradeDataByHours').then((res) => {
-      console.log(res.data)
-      this.hours = res.data.hours
-      this.barData = res.data.data
-    })
   },
   data () {
     return {
@@ -36,13 +31,22 @@ export default {
       },
       xAxis: {
         type: 'category',
-        data: this.hours
+        data: []
       },
       yAxis: {
         type: 'value'
       },
       series: [{
-        data: this.barData,
+        data: [],
+        markLine: {
+          silent: true,
+          data: [{
+            yAxis: '100',
+            lineStyle: {
+              color: 'red'
+            }
+          }]
+        },
         type: 'bar',
         itemStyle: {
           normal: {
@@ -86,6 +90,33 @@ export default {
         }]
       })
     })
+    this.freshDate()
+  },
+  methods: {
+    freshDate: function () {
+      // setInterval属于window，使用前将this赋值给that
+      let that = this
+      setInterval(function () {
+        axios.get('/api/front/tradeDataByHours').then((res) => {
+          console.log(res.data)
+          that.hours = res.data.hours
+          that.barData = res.data.data
+          that.myChart.setOption({
+            xAxis: {
+              type: 'category',
+              data: that.hours
+            },
+            yAxis: {
+              type: 'value'
+            },
+            series: [{
+              data: that.barData,
+              type: 'bar'
+            }]
+          })
+        })
+      }, 60 * 60 * 1000)
+    }
   }
 }
 </script>
